@@ -1,0 +1,27 @@
+{
+  "name": "chart-of-accounts",
+  "version": "1.0.0",
+  "description": "Chart Of Account utility .",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "accounting",
+    "chart of accounts",
+    "accounts",
+  ],
+  "author": "Amadou Sylla",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amasyll/chart-of-accounts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amasyll/chart-of-accounts/issues"
+  },
+  "homepage": "https://github.com/amasyll/chart-of-accounts#readme"
+}
