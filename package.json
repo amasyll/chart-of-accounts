@@ -1,6 +1,6 @@
 {
   "name": "chart-of-accounts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chart Of Account utility .",
   "main": "index.js",
   "directories": {
