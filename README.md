@@ -85,10 +85,10 @@ Returns `true` if a chart of accounts code expects an annex accounts. code, othe
 
 ```js
 chartOfAccount.annex[2103] // => undefined
-chartOfAccount.annex[6120] // => true
-chartOfAccount.annex[6230] // => true
-chartOfAccount.annex[7330] // => true
-chartOfAccount.annex[7430] // => true
+chartOfAccount.annex[8620] // => true
+chartOfAccount.annex[8230] // => true
+chartOfAccount.annex[9330] // => true
+chartOfAccount.annex[9430] // => true
 ```
 
 ## License
