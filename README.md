@@ -4,7 +4,7 @@ Chart Of Account utility for node.
 
 This module provides a chart of account sourced from :
   * The [chart of accounts according to the uniform act on organization and harmonization
-    accounts of companies on February 22, 2000](www.Droit-Afrique.com)
+    accounts of companies on February 22, 2000](https://www.Droit-Afrique.com)
   * The [Chart of account SYSCOHADA](https://plan-comptable-ohada.com/ancienne-norme-2001/comptes.html)
 
 ## Installation
