@@ -93,4 +93,4 @@ chartOfAccount.annex[9430] // => true
 
 ## License
 
-[MIT](LICENSE)
+[MIT](/LICENSE.md)
