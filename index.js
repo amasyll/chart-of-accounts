@@ -29,6 +29,62 @@ chartOfAccounts.incomeStatement = require('./lib/income-statmet');
 chartOfAccounts.annex = require('./lib/annexes');
 
 /**
+ * Create a function that verifies if the code belongs an account type
+ * @param {string} account type
+ * @param {String|Number} account code
+ * @returns {true|false}
+ * @private
+ * /
+/*coa['80', '81', '82', '83', '84', '85', '86', '87', '88', '89']
+['90', '91', '92', '93', '94', '95', '96', '97', '98', '99']*/
+chartOfAccounts.isBelongs = (className, classCode) => {
+  let classArray
+  let classCodes
+  if (typeof className !== 'string') {
+    throw new Error('The class type must be a string')
+  }
+  if (typeof classCode === 'number') {
+    classCodes = classCode.toString()
+  } else
+  if (typeof classCode === 'string') {
+    classCodes = classCode
+  } else {
+    throw new Error('The code must be a string or number')
+  }
+  switch (className) {
+    case 'Equity':
+      classArray = ['10', '11', '12', '13', '14', '15', '16', '17', '18', '19']
+      break
+    case 'Fixed assets':
+      classArray = ['20', '21', '22', '23', '24', '25', '26', '27', '28', '29']
+      break
+    case 'Stocks':
+      classArray = ['30', '31', '32', '33', '34', '35', '36', '37', '38', '39']
+      break
+    case 'Third part':
+      classArray = ['40', '41', '42', '43', '44', '45', '46', '47', '48', '49']
+      break
+    case 'Cash':
+      classArray = ['50', '51', '52', '53', '54', '55', '56', '57', '58', '59']
+      break
+    case 'Expenses':
+      classArray = ['60', '61', '62', '63', '64', '65', '66', '67', '68', '69']
+      break
+    case 'Incomes':
+      classArray = ['70', '71', '72', '73', '74', '75', '76', '77', '78', '79']
+      break
+    default:
+  }
+  let codes
+  if (classCodes.length > 2) {
+    codes = classCodes.substring(0, 2)
+  } else {
+    codes = classCodes
+  }
+  return classArray.includes(codes)
+}
+
+/**
  * Create a map of label to Chart Of Accounts code.
  * @private
  */

@@ -90,7 +90,25 @@ chartOfAccount.annex[8230] // => true
 chartOfAccount.annex[9330] // => true
 chartOfAccount.annex[9430] // => true
 ```
+## chartOfAccount.isBelongs('Account type', code)
+The code must be a string or a number
+Returns `true` if the code belongs to on of the account types listed below 
+* Equity;
+* Fixed assets;
+* Stocks;
+* Third part;
+* Cash;
+* Expenses;
+* Incomes
+else returns false
 
+E.g
+```js
+chartOfAccount.isBelongs('Equity', 1011) // => true
+chartOfAccount.isBelongs('Equity', '1011') // => true
+chartOfAccount.isBelongs('Equity', 2011) // => false
+chartOfAccount.isBelongs('Equity', '2011') // => false
+```
 ## License
 
 [MIT](/LICENSE.md)
